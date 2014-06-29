@@ -9,8 +9,8 @@
  * the arduino IDE.
  */
 
-#include <IRremote.h>
-#include <IRremoteInt.h>
+#include <OX6.h>
+#include <OX6Int.h>
 
 // Dumps out the decode_results structure.
 // Call this after IRrecv::decode()

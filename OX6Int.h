@@ -1,5 +1,5 @@
 /*
- * IRremote
+ * OX6
  * Version 0.1 July, 2009
  * Copyright 2009 Ken Shirriff
  * For details, see http://arcfn.com/2009/08/multi-protocol-infrared-remote-library.html
@@ -13,8 +13,8 @@
  * JVC and Panasonic protocol added by Kristian Lauszus (Thanks to zenwheel and other people at the original blog post)
  */
 
-#ifndef IRremoteint_h
-#define IRremoteint_h
+#ifndef OX6int_h
+#define OX6int_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
 #include <Arduino.h>
@@ -26,7 +26,7 @@
 //
 // Uncomment the timer you wish to use on your board.  If you
 // are using another library which uses timer2, you have options
-// to switch IRremote to use a different timer.
+// to switch OX6 to use a different timer.
 
 // Arduino Mega
 #if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
@@ -197,7 +197,7 @@ typedef struct {
 } 
 irparams_t;
 
-// Defined in IRremote.cpp
+// Defined in OX6.cpp
 extern volatile irparams_t irparams;
 
 // IR detector output is active low

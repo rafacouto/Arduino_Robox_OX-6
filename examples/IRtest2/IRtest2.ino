@@ -25,7 +25,7 @@
  * http://arcfn.com
  */
 
-#include <IRremote.h>
+#include <OX6.h>
 
 int RECV_PIN = 11;
 int LED_PIN = 3;

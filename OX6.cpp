@@ -1,5 +1,5 @@
 /*
- * IRremote
+ * OX6
  * Version 0.11 August, 2009
  * Copyright 2009 Ken Shirriff
  * For details, see http://arcfn.com/2009/08/multi-protocol-infrared-remote-library.html
@@ -16,8 +16,8 @@
  * JVC and Panasonic protocol added by Kristian Lauszus (Thanks to zenwheel and other people at the original blog post)
  */
 
-#include "IRremote.h"
-#include "IRremoteInt.h"
+#include "OX6.h"
+#include "OX6Int.h"
 
 // Provides ISR
 #include <avr/interrupt.h>
@@ -25,7 +25,7 @@
 volatile irparams_t irparams;
 
 // These versions of MATCH, MATCH_MARK, and MATCH_SPACE are only for debugging.
-// To use them, set DEBUG in IRremoteInt.h
+// To use them, set DEBUG in OX6Int.h
 // Normally macros are used for efficiency
 #ifdef DEBUG
 int MATCH(int measured, int desired) {
@@ -69,7 +69,7 @@ int MATCH_SPACE(int measured_ticks, int desired_us) {
 int MATCH(int measured, int desired) {return measured >= TICKS_LOW(desired) && measured <= TICKS_HIGH(desired);}
 int MATCH_MARK(int measured_ticks, int desired_us) {return MATCH(measured_ticks, (desired_us + MARK_EXCESS));}
 int MATCH_SPACE(int measured_ticks, int desired_us) {return MATCH(measured_ticks, (desired_us - MARK_EXCESS));}
-// Debugging versions are in IRremote.cpp
+// Debugging versions are in OX6.cpp
 #endif
 
 void IRsend::sendNEC(unsigned long data, int nbits)

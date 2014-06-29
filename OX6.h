@@ -1,5 +1,5 @@
 /*
- * IRremote
+ * OX6
  * Version 0.1 July, 2009
  * Copyright 2009 Ken Shirriff
  * For details, see http://arcfn.com/2009/08/multi-protocol-infrared-remote-library.htm http://arcfn.com
@@ -12,8 +12,8 @@
  * JVC and Panasonic protocol added by Kristian Lauszus (Thanks to zenwheel and other people at the original blog post)
  */
 
-#ifndef IRremote_h
-#define IRremote_h
+#ifndef OX6_h
+#define OX6_h
 
 // The following are compile-time library options.
 // If you change them, recompile the library.

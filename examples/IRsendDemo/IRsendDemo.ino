@@ -6,7 +6,7 @@
  * http://arcfn.com
  */
 
-#include <IRremote.h>
+#include <OX6.h>
 
 IRsend irsend;
 
